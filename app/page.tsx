@@ -808,9 +808,9 @@ export default function Home() {
         `}</style>
 
         <div className="fade-in" style={{ marginBottom: "20px" }}>
-          <Pill>Les packs</Pill>
+          <Pill>Notre offre</Pill>
         </div>
-        <h2 className="h2 fade-in" style={{ marginBottom: "64px" }}>Choisis ton pack.</h2>
+        <h2 className="h2 fade-in" style={{ marginBottom: "64px" }}>6 vidéos. Prêt à publier.</h2>
 
         <style>{`
           @media (max-width: 860px) { .offres-grid { grid-template-columns: 1fr !important; } }
