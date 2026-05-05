@@ -810,7 +810,7 @@ export default function Home() {
         <div className="fade-in" style={{ marginBottom: "20px" }}>
           <Pill>Notre offre</Pill>
         </div>
-        <h2 className="h2 fade-in" style={{ marginBottom: "64px" }}>6 vidéos. Faites pour vendre.</h2>
+        <h2 className="h2 fade-in" style={{ marginBottom: "64px" }}>6 vidéos. Écrites pour vendre.</h2>
 
         <style>{`
           @media (max-width: 860px) { .offres-grid { grid-template-columns: 1fr !important; } }
@@ -974,19 +974,18 @@ export default function Home() {
             <h2 className="h2" style={{ fontSize: "clamp(36px,5vw,72px)", marginBottom: "20px" }}>
               Votre vitrine, sur <span style={{ color: "#00E676" }}>TikTok</span> &amp; <span style={{ color: "#00E676" }}>Instagram</span>. On s&apos;en occupe.
             </h2>
-            {/* Icônes SVG */}
-            <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginBottom: "40px", flexWrap: "wrap" }}>
-              {[
-                { label: "Script", svg: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg> },
-                { label: "Tournage", svg: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg> },
-                { label: "Montage", svg: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg> },
-                { label: "Publié", svg: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> },
-              ].map(({ label, svg }) => (
-                <div key={label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "14px", padding: "16px 20px", color: "#00E676", backdropFilter: "blur(8px)", minWidth: "80px" }}>
-                  {svg}
-                  <span style={{ fontSize: "11px", color: "rgba(245,245,245,0.5)", fontWeight: 600, letterSpacing: "0.04em" }}>{label}</span>
-                </div>
-              ))}
+            {/* Logos réseaux */}
+            <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginBottom: "40px" }}>
+              {/* Instagram */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(0,230,118,0.15)", borderRadius: "14px", padding: "16px 28px", backdropFilter: "blur(8px)" }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#00E676" strokeWidth="1.5"/><circle cx="12" cy="12" r="4" stroke="#00E676" strokeWidth="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="#00E676"/></svg>
+                <span style={{ fontSize: "11px", color: "rgba(245,245,245,0.5)", fontWeight: 600, letterSpacing: "0.04em" }}>Instagram</span>
+              </div>
+              {/* TikTok */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(0,230,118,0.15)", borderRadius: "14px", padding: "16px 28px", backdropFilter: "blur(8px)" }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#00E676"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+                <span style={{ fontSize: "11px", color: "rgba(245,245,245,0.5)", fontWeight: 600, letterSpacing: "0.04em" }}>TikTok</span>
+              </div>
             </div>
             <a href="https://wa.me/33766363914" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#00E676", color: "#0A0A0A", padding: "16px 36px", borderRadius: "999px", fontWeight: 700, fontSize: "16px", textDecoration: "none", boxShadow: "0 4px 32px rgba(0,230,118,0.35)", fontFamily: "PlusJakartaSans, sans-serif" }}>
               Nous contacter sur WhatsApp →
